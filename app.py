@@ -350,7 +350,7 @@ interview_type = st.sidebar.selectbox(
 num_questions = st.sidebar.slider(
     "Number of Base Questions",
     3,
-    5,
+    10,
     3
 )
 

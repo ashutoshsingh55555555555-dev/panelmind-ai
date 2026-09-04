@@ -7,7 +7,12 @@ TECHNICAL_QUESTIONS = [
     "Why did you choose the technologies used in your project?",
     "How did you handle errors or unexpected problems in your project?",
     "How would you improve the performance of your application?",
-    "Explain one technical concept that you are confident about."
+    "Explain one technical concept that you are confident about.",
+    "How do you design an API that is reliable, secure, and easy to maintain?",
+    "How do you approach testing a feature before releasing it to users?",
+    "Describe a time you had to debug a difficult production issue.",
+    "How would you design a system to handle a sudden increase in traffic?",
+    "What trade-offs do you consider when choosing between two technical approaches?"
 ]
 
 HR_QUESTIONS = [
@@ -15,7 +20,12 @@ HR_QUESTIONS = [
     "What is your biggest strength?",
     "Tell me about a challenge you faced and how you solved it.",
     "Why should we hire you?",
-    "Where do you see yourself in the next five years?"
+    "Where do you see yourself in the next five years?",
+    "Tell me about a time you received difficult feedback.",
+    "Describe a situation where you had to work with a difficult teammate.",
+    "How do you prioritize when you have several urgent tasks?",
+    "Tell me about a mistake you made and what you learned from it.",
+    "What kind of work environment helps you perform at your best?"
 ]
 
 GENERAL_QUESTIONS = [
@@ -23,7 +33,12 @@ GENERAL_QUESTIONS = [
     "What is your biggest achievement?",
     "Describe a difficult problem you solved.",
     "How do you handle pressure?",
-    "Why do you want to join our organization?"
+    "Why do you want to join our organization?",
+    "Tell me about a time you showed leadership.",
+    "How do you learn a new skill or technology?",
+    "Describe a time you had to adapt to a major change.",
+    "What motivates you to do your best work?",
+    "What questions would you ask an interviewer at the end of a round?"
 ]
 
 
