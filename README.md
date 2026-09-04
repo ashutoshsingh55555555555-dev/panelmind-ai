@@ -1,8 +1,16 @@
 # PanelMind AI
 
+<p align="center">
+	<img src="assets/logo.png" alt="PanelMind AI logo" width="180">
+</p>
+
 ## Adaptive AI Interview Panel Simulator
 
 PanelMind AI is an interactive mock interview simulator that behaves more like a real interview panel than a fixed questionnaire. It analyzes each answer, identifies its strength, and chooses a follow-up question that matches the candidate's depth.
+
+<p align="center">
+	<a href="https://panelmind-ai-i3q9wokddjl5b2z67f4ryn.streamlit.app/">Open the live interview simulator</a>
+</p>
 
 > Strong answers get deeper questions. Vague answers get clarification. Reasonable answers get practical probing.
 
@@ -58,6 +66,10 @@ Build final interview report
 > Why did you choose that frontend approach over a simpler option, and how did you manage state across components?
 
 This tests reasoning and depth instead of only checking whether the answer contains a technology keyword.
+
+## Visual Preview
+
+The project logo is included in [`assets/logo.png`](assets/logo.png). Try the complete interactive experience in the [live demo](https://panelmind-ai-i3q9wokddjl5b2z67f4ryn.streamlit.app/): choose an interview mode, answer a question, and continue through the adaptive follow-up flow.
 
 ## Tech Stack
 
