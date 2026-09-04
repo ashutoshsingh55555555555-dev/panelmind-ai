@@ -227,11 +227,32 @@ st.markdown(
     }
 
     div.stButton > button {
+        background: #ffffff !important;
+        color: #18212f !important;
+        -webkit-text-fill-color: #18212f !important;
         border-radius: 10px;
         border: 1px solid #d7deea;
         font-weight: 700;
         min-height: 2.8rem;
         transition: transform 120ms ease, box-shadow 120ms ease;
+    }
+
+    div.stButton > button[kind="primary"],
+    div.stButton > button[data-testid="baseButton-primary"] {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    div.stButton > button[kind="primary"],
+    div.stButton > button[data-testid="baseButton-primary"] {
+        background: #2563eb !important;
+        border-color: #2563eb !important;
+    }
+
+    div.stButton > button[kind="primary"] p,
+    div.stButton > button[data-testid="baseButton-primary"] p {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
     }
 
     div.stButton > button:hover {
@@ -402,7 +423,8 @@ if not st.session_state.started:
 
     if st.button(
         "🚀 Start Interview",
-        use_container_width=True
+        use_container_width=True,
+        type="primary"
     ):
 
         st.session_state.questions = get_questions(
@@ -524,7 +546,8 @@ elif (
 
     if st.button(
         "🧠 Analyze My Answer",
-        use_container_width=True
+        use_container_width=True,
+        type="primary"
     ):
 
         if not answer.strip():
