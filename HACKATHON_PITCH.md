@@ -1,5 +1,85 @@
 # PanelMind AI Hackathon Pitch
 
+## 5-Minute Presentation Plan
+
+Use this timing to keep the demo focused and leave no section unfinished.
+
+| Time | Section | What to say or show |
+| --- | --- | --- |
+| 0:00-0:35 | Hook | Explain that fixed mock interviews stop after an answer, while real interviewers ask, "Why?" and "Can you explain that further?" |
+| 0:35-1:10 | Problem | Students practice memorized questions but rarely practice handling pushback, vague answers, or deeper technical questions. |
+| 1:10-1:50 | Solution | Introduce PanelMind AI as an adaptive simulator for Technical, HR, and General interviews. |
+| 1:50-3:40 | Live demo | Select Technical Interview, answer the React example, analyze it, and show the targeted follow-up. |
+| 3:40-4:20 | How it works | Explain weak, medium, and strong answer paths plus topic detection and feedback generation. |
+| 4:20-4:45 | Impact | Mention voice practice, final report, and how candidates improve depth, clarity, and confidence. |
+| 4:45-5:00 | Close | Deliver the closing statement and show the live URL. |
+
+## Exact 5-Minute Speaking Script
+
+### 0:00-0:35: Hook
+
+"Imagine answering an interview question and immediately getting asked: why did you choose that approach, what trade-off did you accept, and what result did you achieve? That is how real interviews work. Most mock-interview tools do not. They ask a fixed list and move on. PanelMind AI is built to practice the follow-up, not just memorize the question."
+
+### 0:35-1:10: Problem
+
+"Students preparing for interviews often know the basic answer but struggle when the panel pushes deeper. A vague answer is not clarified, a strong answer is not challenged, and typed practice does not recreate speaking pressure. This creates a gap between mock practice and the real interview experience."
+
+### 1:10-1:50: Solution
+
+"PanelMind AI closes that gap with an adaptive interview loop. The candidate selects a Technical, HR, or General round, answers a base question, and receives instant analysis. Weak answers trigger clarification, medium answers trigger examples and reasoning, and strong answers trigger tougher trade-off questions."
+
+### 1:50-3:40: Live Demo
+
+"I will demonstrate a Technical Interview. I will answer: I used React for the frontend and Redux for state management. We chose it because the team already had experience with the ecosystem, and it helped us keep shared state consistent across multiple screens."
+
+"After analysis, PanelMind AI shows the score, answer strength, strengths, and areas to improve. The important part is the follow-up. Because the answer mentions React and frontend state, the next question asks why React was chosen over a simpler option and how state was managed across components. This is not a random next question. It responds to the candidate's actual answer."
+
+"The candidate can continue with the follow-up, switch to voice mode for speaking practice, and review a final report with question-by-question performance."
+
+### 3:40-4:20: How It Works
+
+"The prototype uses a transparent analysis engine. It checks answer detail, evidence, examples, and relevant concepts. It also detects topic signals such as React, databases, teamwork, bugs, testing, and trade-offs. The question engine combines those signals with answer strength to choose the next difficulty level."
+
+### 4:20-4:45: Impact
+
+"The result is a low-risk practice environment where candidates improve clarity, ownership, reasoning, and confidence. It is useful for students, fresh graduates, and career switchers. The current system is explainable and deployable, and the architecture is ready for resume-aware questions and LLM-based scoring in the next version."
+
+### 4:45-5:00: Close
+
+"PanelMind AI turns interview preparation from a predictable questionnaire into a responsive conversation. It helps candidates practice the moment that matters most when an interviewer asks: why?"
+
+## 3-Minute Q&A Plan
+
+Keep each answer between 20 and 35 seconds. Answer the question directly, then connect it back to the project value.
+
+### Q1: Is this really AI?
+
+"This prototype uses an explainable adaptive analysis engine rather than hiding the scoring inside a black box. It detects answer strength and topic signals, then generates targeted follow-ups. The same architecture can later use an LLM for semantic scoring while keeping the rubric explainable."
+
+### Q2: How is it different from ChatGPT or a normal chatbot?
+
+"A normal chatbot may ask a generic next question. PanelMind AI maintains interview state, classifies answer strength, detects answer topics, changes difficulty, and produces a structured final report. It is designed around interview practice rather than open-ended conversation."
+
+### Q3: How does voice mode work?
+
+"The browser records an answer through Streamlit audio input. Speech recognition converts it to text, and that transcript enters the same analyzer and adaptive follow-up pipeline as a typed answer. Typed input remains available as a fallback."
+
+### Q4: Is the scoring accurate?
+
+"The current scoring is a transparent prototype rubric based on detail, evidence, examples, and relevant concepts. Its value is consistent coaching and clear explanations. For production, we would add semantic evaluation, calibrated datasets, and human-reviewed rubrics."
+
+### Q5: How would you scale it?
+
+"The UI, analyzer, question engine, feedback engine, and voice utility are separated. That makes it straightforward to add authentication, a database for progress history, resume and job-description context, LLM scoring, and interviewer personas without rewriting the core flow."
+
+### Q6: Who is the target user?
+
+"Students, fresh graduates, career switchers, and anyone preparing for technical or behavioral interviews. The strongest value is for candidates who know the basics but need practice explaining decisions under pressure."
+
+## Emergency Short Version
+
+If the demo runs slowly, skip the voice recording and show one complete typed-answer cycle. The essential proof is: answer topic detected, difficulty selected, targeted follow-up generated, and feedback displayed.
+
 ## One-Line Pitch
 
 PanelMind AI is an adaptive interview simulator that listens to a candidate's answer and asks the next question based on its depth, instead of following a fixed script.
