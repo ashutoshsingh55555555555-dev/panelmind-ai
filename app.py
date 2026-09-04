@@ -50,6 +50,43 @@ st.markdown(
         font-family: 'DM Sans', sans-serif;
     }
 
+    .stApp p,
+    .stApp label,
+    [data-testid="stMarkdownContainer"],
+    [data-testid="stMarkdownContainer"] p,
+    [data-testid="stMarkdownContainer"] li {
+        color: var(--ink);
+    }
+
+    [data-testid="stTextArea"] textarea,
+    [data-testid="stTextInput"] input,
+    [data-baseweb="textarea"] textarea,
+    [data-baseweb="input"] input {
+        background: #ffffff !important;
+        color: #18212f !important;
+        -webkit-text-fill-color: #18212f !important;
+        caret-color: #2563eb !important;
+        border: 1px solid #cfd8e6 !important;
+        border-radius: 12px !important;
+    }
+
+    [data-testid="stTextArea"] textarea::placeholder,
+    [data-testid="stTextInput"] input::placeholder {
+        color: #667085 !important;
+        opacity: 1 !important;
+    }
+
+    [data-testid="stAlert"] p,
+    [data-testid="stAlert"] [data-testid="stMarkdownContainer"] {
+        color: #18212f !important;
+    }
+
+    [data-testid="stMetricLabel"],
+    [data-testid="stMetricValue"],
+    [data-testid="stMetricDelta"] {
+        color: #18212f !important;
+    }
+
     [data-testid="stSidebar"] {
         background: #162033;
         border-right: 1px solid rgba(255, 255, 255, 0.08);
